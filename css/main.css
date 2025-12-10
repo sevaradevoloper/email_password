@@ -1,0 +1,118 @@
+/* ======================================= */
+/* GLOBAL STYLES & FONT */
+/* ======================================= */
+:root {
+    --primary-color: #008f76; /* Yashil */
+    --accent-color: #333333; /* To'q kulrang */
+    --background-light: #f4f4f4;
+    --error-red: #dc3545;
+    --success-green: #28a745;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ======================================= */
+/* LOGIN FORM CONTAINER */
+/* ======================================= */
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* ======================================= */
+/* INPUT FIELDS */
+/* ======================================= */
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 143, 118, 0.2);
+    outline: none;
+}
+
+/* ======================================= */
+/* BUTTON */
+/* ======================================= */
+
+#btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+#btn:hover {
+    background-color: #006b58; /* To'qroq rang */
+}
+
+#btn:active {
+    transform: scale(0.99);
+}
+
+/* ======================================= */
+/* MESSAGE AREA */
+/* ======================================= */
+
+#message {
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    min-height: 40px; /* Joyini saqlab turish uchun */
+    font-size: 16px;
+}
